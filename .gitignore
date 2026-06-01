@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+
+# Build artifacts
+build/
+dist/
+build_release_build/
+dist_release_build/
+dist_release_package/
+*.spec
+
+# Virtual env
+.venv/
+.venv*/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Ruff
+.ruff_cache/
+
+# Local secrets and trust artifacts
+codex_model_tray.secrets.json
+codex_model_tray.trust.json
+codex_model_tray.key
+CodexModelTray.lock
+logs/
+*.log
+
+# Local docs, runtime notes, and scratch tooling
+.docs/
+docs/
+temp_scripts/
+ui/*_standalone_*.html
+
+# Local Codex workspace state
+.omc/
+.omx/

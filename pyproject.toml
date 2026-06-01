@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "codex-model-tray"
+version = "0.1.0.2"
+description = "System tray tool for switching Codex models and providers"
+requires-python = ">=3.11"
+dependencies = [
+    "pystray>=0.19.5",
+    "Pillow>=10.0.0",
+    "customtkinter>=5.2.0",
+    "watchdog>=4.0.0",
+]

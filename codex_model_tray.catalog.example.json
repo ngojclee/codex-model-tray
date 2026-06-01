@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "default_provider_key": "cliproxy",
+  "last_provider_key": "cliproxy",
+  "provider_aliases": {
+    "openai": "native",
+    "chatgpt": "native"
+  },
+  "providers": [
+    {
+      "id": "cliproxy",
+      "label": "CLIProxy",
+      "icon": "CP",
+      "auth_mode": "apikey",
+      "base_url": "",
+      "wire_api": "responses",
+      "env_key": "OPENAI_API_KEY",
+      "db_provider": "cliproxy",
+      "config_provider": "cliproxy",
+      "builtin": true
+    },
+    {
+      "id": "krouter",
+      "label": "KRouter",
+      "icon": "KR",
+      "auth_mode": "apikey",
+      "base_url": "",
+      "wire_api": "responses",
+      "env_key": "OPENAI_API_KEY",
+      "db_provider": "krouter",
+      "config_provider": "krouter",
+      "builtin": true
+    },
+    {
+      "id": "native",
+      "label": "Native OpenAI",
+      "icon": "OA",
+      "auth_mode": "chatgpt",
+      "db_provider": "openai",
+      "config_provider": "openai",
+      "builtin": true
+    }
+  ],
+  "models": [
+    {"id": "gpt-5.3-codex", "description": "Codex", "icon": "*"},
+    {"id": "gpt-5.3-codex-spark", "description": "Codex Spark", "icon": "*"},
+    {"id": "gpt-5.4", "description": "GPT 5.4", "icon": "*"},
+    {"id": "gpt-5.5", "description": "GPT 5.5", "icon": "*"},
+    {"id": "cx/gpt-5.4-high", "description": "CX GPT 5.4 high", "icon": "*"},
+    {"id": "cx/gpt-5.4-xhigh", "description": "CX GPT 5.4 xhigh", "icon": "*"},
+    {"id": "cx/gpt-5.5", "description": "CX GPT 5.5", "icon": "*"},
+    {"id": "cx/gpt-5.5-xhigh", "description": "CX GPT 5.5 xhigh", "icon": "*"},
+    {"id": "cx/gpt-5.3-codex-xhigh", "description": "CX Codex xhigh", "icon": "*"},
+    {"id": "qw/qwen3-coder-plus", "description": "Qwen coder plus", "icon": "*"},
+    {"id": "xai/grok-4-fast-reasoning", "description": "Grok fast reasoning", "icon": "*"},
+    {"id": "glm-4.5-air", "description": "GLM 4.5 Air", "icon": "*"},
+    {"id": "glm-4.7", "description": "GLM 4.7", "icon": "*"},
+    {"id": "glm-5.1", "description": "GLM 5.1", "icon": "*"}
+  ],
+  "pinned_models": [
+    "cx/gpt-5.4-high",
+    "cx/gpt-5.4-xhigh",
+    "cx/gpt-5.5",
+    "cx/gpt-5.5-xhigh",
+    "cx/gpt-5.3-codex-xhigh",
+    "qw/qwen3-coder-plus",
+    "glm-5.1",
+    "xai/grok-4-fast-reasoning"
+  ]
+}
